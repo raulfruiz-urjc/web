@@ -66,43 +66,45 @@ export default function HablApp() {
 
             <>
         <Lightbox
-        index={index}
-        slides={[
-          { src: "./assets/loginx900.png"},
-
-          { src: "./assets/menux900.png"},
-          { src: "./assets/tutorialx900.png"},
-          { src: "./assets/enviarx900.png"},
-        ]}
-        plugins={[Inline]}
-        on={{
-          view: updateIndex(false),
-          click: toggleOpen(true),
-        }}
-        carousel={{
-          padding: 0,
-          spacing: 0,
-          imageFit: "contain",
-        }}
-        inline={{
-          style: {
-            width: "100%",
-    maxWidth: "700px",
-    height: "80vh",
-    margin: "0 auto",
-     background: "transparent",
-     borderRadius: "20px",
- overflow: "hidden",          },
-        }}
-        styles={{
+  index={index}
+  slides={[
+    { src: "./assets/loginx900.png" },
+    { src: "./assets/menux900.png" },
+    { src: "./assets/tutorialx900.png" },
+    { src: "./assets/enviarx900.png" },
+  ]}
+  plugins={[Inline]}
+  on={{
+    view: updateIndex(false),
+    click: toggleOpen(true),
+  }}
+  carousel={{
+    padding: 0,
+    spacing: 0,
+    imageFit: "contain",
+    imageProps: {
+      className: "rounded-[20px] border-4 border-black",
+    },
+  }}
+  inline={{
+    style: {
+      width: "8 0%",
+      maxWidth: "700px",
+      height: "420px",
+      margin: "0 auto",
+      background: "transparent",
+      borderRadius: "20px",
+      overflow: "hidden",
+    },
+  }}
+  styles={{
     container: { backgroundColor: "transparent" },
     carousel: { backgroundColor: "transparent" },
-    navigationPrev: { color: "black"},
-    navigationNext: { color: "black"},
-    slide: { borderRadius: "20px"},
-    image: {borderRadius: "20px"}
+    navigationPrev: { color: "black",  borderRadius: "9999px", padding: "8px", backgroundColor: "white",left:"5px" },
+    navigationNext: { color: "black", borderRadius: "9999px",padding: "8px", right:"5px",
+    backgroundColor: "white" },
   }}
-      />
+/>
 
       <Lightbox
         open={open}
