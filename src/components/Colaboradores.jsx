@@ -4,25 +4,25 @@ import './ImageCarousel.css';
 export default function Colaboradores() {
 
     const images = [
-        { id: 1, src: './assets/Agustin.png'},
-        { id: 2, src: './assets/Agustin.png'},
-        { id: 3, src: './assets/DaniP.png'},
-        { id: 4, src: './assets/Irene.png'},
-        { id: 5, src: './assets/Elena.png'},
-        { id: 6, src: './assets/Nikola.png'},
-        { id: 7, src: './assets/DaniG.png'},
-        { id: 8, src: './assets/Raul.png'}
+        { id: 1, src: './assets/foto_AgustinAlvarez.png'},
+        { id: 2, src: './assets/foto_AgustinAlvarez.png'},
+        { id: 3, src: './assets/Irene.png'},
+        { id: 4, src: './assets/elenax256.png'},
+        { id: 5, src: './assets/danipfoto.jpg'},
+        { id: 6, src: './assets/nikix256.png'},
+        { id: 7, src: './assets/foto-daniel-gonzalez.jpg'},
+        { id: 8, src: './assets/raulfoto.png'}
     ]
 
     const miembros = [
         {id: 1, nombre: 'Rafael Martínez Olalla', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
-        {id: 2, nombre: 'Agustín Álvarez Marquina', txt: 'Texto Agustín'},
-        {id: 3, nombre: 'Daniel Palacios Alonso', txt: 'Texto DaniP'},
-        {id: 4, nombre: 'Irene Hidalgo Guía', txt: 'Texto Irene'},
-        {id: 5, nombre: 'Elena Garayzábal Heinze', txt: 'Texto Elena'},
-        {id: 6, nombre: 'Nikola Hristov Kalamov', txt: 'Texto Nikola'},
-        {id: 7, nombre: 'Daniel González García', txt: 'Texto DaniG'},
-        {id: 8, nombre: 'Raúl Fernández Ruiz', txt: 'Texto Raúl'}
+        {id: 2, nombre: 'Agustín Álvarez Marquina', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
+        {id: 3, nombre: 'Irene Hidalgo Guía', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
+        {id: 4, nombre: 'Daniel Palacios Alonso', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
+        {id: 5, nombre: 'Elena Garayzábal Heinze', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
+        {id: 6, nombre: 'Nikola Hristov Kalamov', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
+        {id: 7, nombre: 'Daniel González García', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
+        {id: 8, nombre: 'Raúl Fernández Ruiz', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'}
     ]
 
 
@@ -67,7 +67,7 @@ export default function Colaboradores() {
             <div className="flex w-full flex-col lg:flex-row items-center gap-10 my-10">
                 <div className="max-w-max mx-auto relative">
                     <button className="nav-button left" onClick={handlePreviousClick}>&lt;</button>
-                    <img src={images[currentImageIndex].src} alt="" className="w-64 sm:w-80 rounded-3xl max-w-none" />
+                    <img src={images[currentImageIndex].src} alt="" className="w-64 sm:w-80 rounded-3xl max-w-none max-h-80" />
                     <button className="nav-button right" onClick={handleNextClick}>&gt;</button>
                 </div>
                 <div className="flex-1">

@@ -3,6 +3,7 @@ import * as React from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Inline from "yet-another-react-lightbox/plugins/inline";
+import { slides } from "../slides";
 
 export default function HablApp() {
         const [open, setOpen] = React.useState(false);
@@ -42,7 +43,7 @@ export default function HablApp() {
         },
         {
             name: 'Compatible con dispostivos tablet',
-            icon: './assets/ui-icon.png',
+            icon: './assets/logoTablet.png',
             description: 'La app puede es complatible con tablets para facilitar su uso',
             link: '#',
         }
@@ -59,7 +60,6 @@ export default function HablApp() {
                         <img src={service.icon} alt="" className="w-10" />
                         <h3 className="text-lg my-4 text-gray-700 dark:text-white">{service.name}</h3>
                         <p className="text-sm text-gray-600 leading-5 dark:text-white/80">{service.description}</p>
-                        <a href={service.link} className="flex items-center gap-2 text-sm mt-5">Read more <img src="./assets/right-arrow.png" alt="" className="w-4" /></a>
                     </div>
                 ))}
             </div>
@@ -90,14 +90,17 @@ export default function HablApp() {
     maxWidth: "700px",
     height: "80vh",
     margin: "0 auto",
-     background: "transparent"
-          },
+     background: "transparent",
+     borderRadius: "20px",
+ overflow: "hidden",          },
         }}
         styles={{
     container: { backgroundColor: "transparent" },
     carousel: { backgroundColor: "transparent" },
     navigationPrev: { color: "black"},
     navigationNext: { color: "black"},
+    slide: { borderRadius: "20px"},
+    image: {borderRadius: "20px"}
   }}
       />
 
