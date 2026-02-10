@@ -51,7 +51,7 @@ export default function HablApp() {
         <div id="hablapp" className="w-full px-[12%] py-10 scroll-mt-20">
             <h4 className="text-center mb-2 text-lg font-Ovo">Nuestra aplicación para recogida de muestras a distancia</h4>
             <h2 className="text-center text-5xl font-Ovo">HablApp</h2>
-            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.</p>
+            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">HablApp es una aplicación desarrollada para el proyecto CarHaVoz. La aplicación se compone de seis ejercicios</p>
 
             <div className="grid grid-cols-auto gap-6 my-10">
                 {services.map((service) => (
@@ -68,16 +68,11 @@ export default function HablApp() {
         <Lightbox
         index={index}
         slides={[
-          { src: "/PruebaMovil.png",
-            alt: "image 1",
-            width: 900,
-            height: 1500,
-            srcSet: [
-              { src: "./assets/logX1066X640.png", width: 640, height: 1066 }
-            ]},
-          { src: "./assets/prueba.jpg" },
-          { src: "./assets/menuLogIn.png" },
-           { src: "./assets/Agustin.png" },
+          { src: "./assets/loginx900.png"},
+
+          { src: "./assets/menux900.png"},
+          { src: "./assets/tutorialx900.png"},
+          { src: "./assets/enviarx900.png"},
         ]}
         plugins={[Inline]}
         on={{
@@ -87,16 +82,23 @@ export default function HablApp() {
         carousel={{
           padding: 0,
           spacing: 0,
-          imageFit: "cover",
+          imageFit: "contain",
         }}
         inline={{
           style: {
             width: "100%",
-    maxWidth: "900px",
-    aspectRatio: "3 / 5",
-    margin: "0 auto"
+    maxWidth: "700px",
+    height: "80vh",
+    margin: "0 auto",
+     background: "transparent"
           },
         }}
+        styles={{
+    container: { backgroundColor: "transparent" },
+    carousel: { backgroundColor: "transparent" },
+    navigationPrev: { color: "black"},
+    navigationNext: { color: "black"},
+  }}
       />
 
       <Lightbox
