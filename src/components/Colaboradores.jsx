@@ -4,25 +4,25 @@ import './ImageCarousel.css';
 export default function Colaboradores() {
 
     const images = [
-        { id: 1, src: './assets/foto_AgustinAlvarez.png'},
-        { id: 2, src: './assets/foto_AgustinAlvarez.png'},
+        { id: 1, src: './assets/Agustin.png'},
+        { id: 2, src: './assets/Agustin.png'},
         { id: 3, src: './assets/Irene.png'},
-        { id: 4, src: './assets/elenax256.png'},
+        { id: 4, src: './assets/Elena.png'},
         { id: 5, src: './assets/danipfoto.jpg'},
         { id: 6, src: './assets/nikix256.png'},
         { id: 7, src: './assets/foto-daniel-gonzalez.jpg'},
-        { id: 8, src: './assets/raulfoto.png'}
+        { id: 8, src: './assets/FotoRaul.png'}
     ]
 
     const miembros = [
-        {id: 1, nombre: 'Rafael Martínez Olalla', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
-        {id: 2, nombre: 'Agustín Álvarez Marquina', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
-        {id: 3, nombre: 'Irene Hidalgo Guía', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
-        {id: 4, nombre: 'Daniel Palacios Alonso', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
-        {id: 5, nombre: 'Elena Garayzábal Heinze', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
-        {id: 6, nombre: 'Nikola Hristov Kalamov', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
-        {id: 7, nombre: 'Daniel González García', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
-        {id: 8, nombre: 'Raúl Fernández Ruiz', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'}
+        {id: 1, nombre: 'Rafael Martínez Olalla',scholar:'https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=rafael+martinez+olalla&btnG=', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
+        {id: 2, nombre: 'Agustín Álvarez Marquina',scholar:'https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=agustin+alvarez+marquina&btnG=&oq=Agustin+Alvarez+ma' , txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
+        {id: 3, nombre: 'Irene Hidalgo Guía',scholar: 'https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=irene+hidalgo+de+la+gu%C3%ADa&btnG=&oq=Irene+Hidal', txt: ' es profesora en el Departamento de Lengua española y Teoría de la literatura en la Universidad Complutense de Madrid. Es doctora en Lingüística Clínica y está especializada en Fonética y Fonología del español. Su investigación gira en torno a la aplicación clínica y forense de la Fonética y de la Fonología del español. Colabora en el Laboratorio de Procesado Neuromórfico de la Voz, en el Centro de Tecnología Biomédica de la Universidad Politécnica de Madrid, y es miembro del grupo de Lingüistas Forenses. También colabora con la Universidad Rey Juan Carlos en el desarrollo de aplicaciones de biometría del habla.'},
+        {id: 4, nombre: 'Elena Garayzábal Heinze',scholar:'https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=Elena+Garayz%C3%A1bal+Heinze&btnG=' ,txt: ' es logopeda y profesora titular del departamento de Lingüística General de la Universidad Autónoma de Madrid. Está especializada en la aplicación de la Lingüística Clínica y su investigación se centra en el estudio de enfermedades genéticas del neurodesarrollo de baja frecuencia, entre ellas el síndrome de Smith-Magenis.'},
+        {id: 5, nombre: 'Daniel Palacios Alonso',scholar:'https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=daniel+palacios+alonso&btnG=&oq=Daniel', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
+        {id: 6, nombre: 'Nikola Hristov Kalamov',scholar: 'https://scholar.google.com/scholar?hl=es&as_sdt=0,5&q=Nikola+Hristov+Kalamov', txt: ' es investigador predoctoral en el grupo SA-BIO de la Universidad Rey Juan Carlos. Es graduado en Diseño y Desarrollo de Videojuegos y máster en Ingeniería de Sistemas de Decisión. Su tesis, “Avances en Criptografía y sus Aplicaciones: Protección y Distribución de Datos Personales, Sanitarios, Hospitalarios y Biométricos”, se centra en el análisis seguro de datos biométricos y biomédicos.'},
+        {id: 7, nombre: 'Daniel González García',scholar:'https://www.linkedin.com/in/daniel-gonz%C3%A1lez-garc%C3%ADa-460427323', txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum purus vitae lobortis feugiat. Aenean sem erat, vehicula sed nibh eget, tempor consequat risus. In sit amet ligula tortor. Integer at quam risus. In finibus purus id maximus fringilla. Nunc dignissim diam quis finibus venenatis. Integer finibus tellus eget commodo accumsan. Donec viverra hendrerit nisl.'},
+        {id: 8, nombre: 'Raúl Fernández Ruiz',scholar:'https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=Raul+Fernandez+Ruiz&btnG=', txt: ' es profesor en el Departamento de Informática y Estadística de la Universidad Rey Juan Carlos. Graduado en Diseño y Desarrollo de Videojuegos y con un máster en Ingeniería de Sistemas de Decisión, realiza su tesis doctoral en la aplicación de modelos de aprendizaje automático a enfermedades de baja prevalencia.'}
     ]
 
 
@@ -71,7 +71,7 @@ export default function Colaboradores() {
                     <button className="nav-button right" onClick={handleNextClick}>&gt;</button>
                 </div>
                 <div className="flex-1">
-                    <p className="mb-10 max-w-2xl font-Ovo">{miembros[currentImageIndex].txt}</p>
+                    <p className="mb-10 max-w-2xl font-Ovo text-justify"><a href={miembros[currentImageIndex].scholar} target="_blank" style={{color:"blue"}}>{miembros[currentImageIndex].nombre}</a>{miembros[currentImageIndex].txt}</p>
                 </div>
             </div>
         </div>

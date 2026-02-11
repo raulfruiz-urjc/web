@@ -32,34 +32,34 @@ export default function HablApp() {
         {
             name: 'Completamente segura',
             icon: './assets/web-icon.png',
-            description: 'Todo el traspaso de información se encuentra cifrado. Toda la información es almacenada en servidores del proyecto y no de terceros',
+            description: 'Todo el traspaso de información se encuentra cifrado. Asimismo, los datos se almacenan exclusivamente en los servidores propios del proyecto, sin recurrir a infraestructuras de terceros.',
             link: '#',
         },
         {
-            name: 'Disponible en Adroid e IOS',
+            name: 'Adroid e IOS',
             icon: './assets/mobile-icon.png',
-            description: 'La aplicación se encuentra disponible para dispositvos IOS e Android',
+            description: 'La aplicación se encuentra disponible para dispositvos IOS y Android.',
             link: '#',
         },
         {
-            name: 'Compatible con dispostivos tablet',
+            name: 'Compatibilidad con tablet',
             icon: './assets/logoTablet.png',
-            description: 'La app puede es complatible con tablets para facilitar su uso',
+            description: 'La app es compatible con dispositivos tablet para facilitar su uso.',
             link: '#',
         }
     ];
     return (
         <div id="hablapp" className="w-full px-[12%] py-10 scroll-mt-20">
-            <h4 className="text-center mb-2 text-lg font-Ovo">Nuestra aplicación para recogida de muestras a distancia</h4>
             <h2 className="text-center text-5xl font-Ovo">HablApp</h2>
-            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">HablApp es una aplicación desarrollada para el proyecto CarHaVoz. La aplicación se compone de seis ejercicios</p>
+            <p className="text-center max-w-2xl mx-auto mt-5 font-Ovo text-justify">HablApp es una aplicación desarrollada para el proyecto CarHaVoz. Su objetivo es facilitar la obtención de muestras de voz a distancia, permitiendo realizar estudios longitudinales y facilitando los procesos de grabación a las familias. De este modo, se evitan desplazamientos y cada familia puede realizar las grabaciones en el momento que le resulte más conveniente.</p>
+            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-justify">La aplicación se compone de 6 ejercicios centrados en rasgos prosódicos y fonológicos, el objetivo es realizar una grabación de cada ejercicio por semana. Al finalizar cada ejercicio, las grabaciones pueden escucharse de nuevo para comprobar que no hay ruidos de fondo o interferencias. Una vez comprobado que el audio es correcto, este debe enviarse directamente a través de la aplicación a nuestros servidores alojados en la universidad.</p>
 
             <div className="grid grid-cols-auto gap-6 my-10">
                 {services.map((service) => (
                     <div key={service.name} className="border border-gray-300 dark:border-white/30 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
                         <img src={service.icon} alt="" className="w-10" />
                         <h3 className="text-lg my-4 text-gray-700 dark:text-white">{service.name}</h3>
-                        <p className="text-sm text-gray-600 leading-5 dark:text-white/80">{service.description}</p>
+                        <p className="text-sm text-gray-600 leading-5 dark:text-white/80 text-justify">{service.description}</p>
                     </div>
                 ))}
             </div>
