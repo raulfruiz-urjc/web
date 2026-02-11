@@ -12,28 +12,15 @@ export default function Contact() {
         }
         setResult("Sending....");
         const formData = new FormData(event.target);
+    formData.append("access_key", "06a9ba1b-ccd0-4965-8295-7436ccca9472");
 
-        // ----- Enter your Web3 Forms Access key below---------
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
 
-        formData.append("access_key", "06a9ba1b-ccd0-4965-8295-7436ccca9472");
-
-        //const res = {
-        //    success: true,
-       //     message: "Message sent successfully"
-       // };
-         const res = await fetch("https://api.web3forms.com/submit", {
-             method: "POST",
-             body: formData
-         }).then((res) => res.json());
-
-        if (res.success) {
-            console.log("Success", res);
-            setResult(res.message);
-            event.target.reset();
-        } else {
-            console.log("Error", res);
-            setResult(res.message);
-        }
+    const data = await response.json();
+    setResult(data.success ? "Success!" : "Error");
     };
 
     function CaptchaLoader() {
