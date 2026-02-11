@@ -72,7 +72,7 @@ export default function Contact() {
 
             <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
 
-                <input type="hidden" name="subject" value="Eliana Jade - New form Submission" />
+                <input type="hidden" name="subject" value="CarHaVoz - Nuevo formulario" />
 
                 <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
                     <input type="text" placeholder="Introduce tu nombre" className="flex-1 px-3 py-2 focus:ring-1 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-darkHover/30" required name="name" />
@@ -82,7 +82,7 @@ export default function Contact() {
                 <textarea rows="6" placeholder="Enter your message" className="w-full px-4 py-2 focus:ring-1 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-darkHover/30" required name="message"></textarea>
                 <div className="h-captcha mb-6 max-w-full" data-captcha="true"></div>
                 <button type='submit' className="py-2 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border dark:border-white/30 dark:hover:bg-darkHover">
-                Envoar
+                Enviar
                     <img src="./assets/right-arrow-white.png" alt="" className="w-4" />
                 </button>
                 <p className='mt-4'>{result}</p>
