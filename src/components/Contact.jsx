@@ -15,16 +15,16 @@ export default function Contact() {
 
         // ----- Enter your Web3 Forms Access key below---------
 
-        formData.append("access_key", "--- enter your access key here-------");
+        formData.append("access_key", "06a9ba1b-ccd0-4965-8295-7436ccca9472");
 
-        const res = {
-            success: true,
-            message: "Message sent successfully"
-        };
-        // const res = await fetch("https://api.web3forms.com/submit", {
-        //     method: "POST",
-        //     body: formData
-        // }).then((res) => res.json());
+        //const res = {
+        //    success: true,
+        //    message: "Message sent successfully"
+        //};
+         const res = await fetch("https://api.web3forms.com/submit", {
+             method: "POST",
+             body: formData
+         }).then((res) => res.json());
 
         if (res.success) {
             console.log("Success", res);
@@ -36,47 +36,6 @@ export default function Contact() {
         }
     };
 
-    function CaptchaLoader() {
-        const captchadiv = document.querySelectorAll('[data-captcha="true"]');
-        if (captchadiv.length) {
-            let lang = null;
-            let onload = null;
-            let render = null;
-
-            captchadiv.forEach(function (item) {
-                const sitekey = item.dataset.sitekey;
-                lang = item.dataset.lang;
-                onload = item.dataset.onload;
-                render = item.dataset.render;
-
-                if (!sitekey) {
-                    item.dataset.sitekey = "50b2fe65-b00b-4b9e-ad62-3ba471098be2";
-                }
-            });
-
-            let scriptSrc = "https://js.hcaptcha.com/1/api.js?recaptchacompat=off";
-            if (lang) {
-                scriptSrc += `&hl=${lang}`;
-            }
-            if (onload) {
-                scriptSrc += `&onload=${onload}`;
-            }
-            if (render) {
-                scriptSrc += `&render=${render}`;
-            }
-
-            var script = document.createElement("script");
-            script.type = "text/javascript";
-            script.async = true;
-            script.defer = true;
-            script.src = scriptSrc;
-            document.body.appendChild(script);
-        }
-    }
-
-    useEffect(() => {
-        CaptchaLoader();
-    }, []);
     return (
         <div id="contact" className="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./assets/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
 
