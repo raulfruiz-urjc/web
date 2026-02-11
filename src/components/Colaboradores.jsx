@@ -8,9 +8,9 @@ export default function Colaboradores() {
         { id: 2, src: './assets/Agustin.png'},
         { id: 3, src: './assets/Irene.png'},
         { id: 4, src: './assets/Elena.png'},
-        { id: 5, src: './assets/danipfoto.jpg'},
+        { id: 5, src: './assets/Dani.png'},
         { id: 6, src: './assets/nikix256.png'},
-        { id: 7, src: './assets/foto-daniel-gonzalez.jpg'},
+        { id: 7, src: './assets/DaniG.jpg'},
         { id: 8, src: './assets/FotoRaul.png'}
     ]
 
